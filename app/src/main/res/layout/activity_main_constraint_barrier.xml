@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.constraintlayoutmaterial.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/imgCity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/catedral_de_malaga"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wallpaper" />
+
+    <ImageView
+        android:id="@+id/imgFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/favoritos"
+        app:layout_constraintBottom_toBottomOf="@id/imgCity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgCity"
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:id="@+id/txtMonument"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:text="@string/txtMonument"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgCity" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/txtDateVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:text="@string/txtDateVisit"
+        app:layout_constraintStart_toStartOf="@id/txtMonument"
+        app:layout_constraintTop_toBottomOf="@id/txtMonument"
+        app:layout_constraintEnd_toStartOf="@id/barrier"
+        />
+
+    <EditText
+        android:id="@+id/edtDateVisit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@id/txtDateVisit"
+        app:layout_constraintStart_toEndOf="@id/barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="30dp"
+        />
+
+    <TextView
+        android:id="@+id/txtTypeVisit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:text="@string/txtTypeVisit"
+        app:layout_constraintStart_toStartOf="@id/txtDateVisit"
+        app:layout_constraintTop_toBottomOf="@id/txtDateVisit"
+        app:layout_constraintEnd_toStartOf="@id/barrier"
+        />
+
+    <EditText
+        android:id="@+id/edtTypeVisit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBaseline_toBaselineOf="@id/txtTypeVisit"
+        app:layout_constraintStart_toEndOf="@id/barrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="30dp"
+        />
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/comprar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/imgFavorites" />
+
+    <Button
+        android:id="@+id/btnReserved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reservar"
+        app:layout_constraintBaseline_toBaselineOf="@id/btnBuy"
+        app:layout_constraintRight_toLeftOf="@id/btnBuy" />
+
+</android.support.constraint.ConstraintLayout>

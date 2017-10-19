@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ConstraintLayoutMaterial</string>
+    <string name="txtMonument">Catedral</string>
+    <string name="txtDateVisit">Fecha de visita</string>
+    <string name="txtTypeVisit">Tipo de entrada</string>
+    <string name="comprar">Comprar</string>
+    <string name="reservar">Reservar</string>
+    <string name="catedral_de_malaga">Catedral de Málaga</string>
+    <string name="favoritos">favoritos</string>
+    <string name="calculator">Calculator</string>
+</resources>

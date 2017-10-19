@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ConstraintLayoutMaterial</string>
+    <string name="comprar">Kōnyū suru</string>
+    <string name="reservar">Yoyaku suru</string>
+    <string name="txtDateVisit">Hōmon-bi</string>
+    <string name="txtMonument">Taiseidō</string>
+    <string name="txtTypeVisit">Nyūryoku taipu</string>
+    <string name="catedral_de_malaga">Maraga taiseidō</string>
+    <string name="favoritos">Okiniiri</string>
+</resources>
